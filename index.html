@@ -34,7 +34,7 @@
                                 class='fa fa-address-card fa-lg'></span>Contact</a></li>
                 </ul>
                 <span class='navbar-text'>
-                    <a data-toggle='modal' data-target='#loginModal'>
+                    <a id='loginButton'>
                         <span class='fa fa-sign-in'></span>Login
                     </a>
                 </span>
@@ -95,7 +95,7 @@
 
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <button class='btn btn-block btn-warning' data-toggle='modal' data-target='#reserveModal'>
+                    <button id='reserveButton'class='btn btn-block btn-warning' >
                         Reserve a Table
                     </button>
                     <div id='reserveModal' class='modal fade' role='dialog'>
@@ -403,6 +403,17 @@
                     cycle: true,
                     pause: "null"
                 });
+                //data-toggle for #loginModal'
+                $('#loginButton').click(function(){
+                    $('#loginModal').modal('toggle');
+                });
+                //data-toggle for #reserveModal'
+                $('#reserveButton').click(function(){
+                    $('#reserveModal').modal('toggle');
+                });
+                
+
+                
 
                 $('#carouselButton').click(function () {
                     if ($("#carouselButton").children("span").hasClass('fa-pause')){
