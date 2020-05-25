@@ -88,6 +88,10 @@ body{
     .modal-body{
         background-color: $background-pale;
         color:black;
+        .small-btn{
+            font-size: 70%;
+        }
     }
+    
     
 }

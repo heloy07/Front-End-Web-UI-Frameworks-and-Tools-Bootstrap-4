@@ -63,3 +63,5 @@ body {
   .modal .modal-body {
     background-color: #D1C4E9;
     color: black; }
+    .modal .modal-body .small-btn {
+      font-size: 70%; }
